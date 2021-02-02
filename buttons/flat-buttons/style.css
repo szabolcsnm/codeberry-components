@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 1rem;
+    margin-bottom: 0.3125rem;
+    padding: 0.625rem;
+    text-align: center;
+    border: 1px solid black;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}

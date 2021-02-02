@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Space Mono", monospace;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.signup {
+    border: 1px solid grey;
+    border-radius: 9999px;
+}
+
+nav a:hover {
+    color: hsl(0, 0%, 77%);
+    transition: color 0.15s ease-in-out;
+}
+
+.signup:hover {
+    color: #000;
+    background-color: #fff;
+    transition: background-color 0.15s ease-in-out;
+}
+
+@media (min-width: 700px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    nav a {
+        float: right;
+    }
+
+    .home {
+        float: left;
+    }
+
+    nav::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
